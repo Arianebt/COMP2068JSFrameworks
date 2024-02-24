@@ -1,0 +1,22 @@
+<h1>All Students</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Student Number</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email Address</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each students}}
+      <tr>
+        <td>{{this.studentNumber}}</td>
+        <td>{{this.firstName}}</td>
+        <td>{{this.lastName}}</td>
+        <td>{{this.emailAddress}}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+<a href="/student">Add New Student</a>
