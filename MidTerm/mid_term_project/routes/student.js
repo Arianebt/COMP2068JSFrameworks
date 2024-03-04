@@ -17,8 +17,9 @@ router.post('/', async (req, res) => {
 // Route to get all students
 router.get('/', async (req, res) => {
   try {
-    const student = await Student.find();
-    res.render('student/index', { student });
+    const students = await Student.find();
+    console.log(students);
+    res.render('index', { students: students});
   } catch (error) {
     res.status(500).send(error);
   }
