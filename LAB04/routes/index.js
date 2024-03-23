@@ -1,21 +1,25 @@
 var express = require('express');
 var router = express.Router();
 
+/* GET home page. */
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'Travel Blog' });
+});
+
 router.get('/destination1', function(req, res, next) {
-    res.render('destination1', { title: 'Destination 1', destination: 'Destination 1 Info' });
+  res.render('destination1', { title: 'Travel Blog - Paris', destination: 'Meeting Paris' });
 });
 
 router.get('/destination2', function(req, res, next) {
-    res.render('destination2', { title: 'Destination 2', destination: 'Destination 2 Info' });
+  res.render('destination2', { title: 'Travel Blog - Amsterdam', destination: 'Amsterdam' });
 });
 
 router.get('/destination3', function(req, res, next) {
-    res.render('destination3', { title: 'Destination 3', destination: 'Destination 3 Info' });
+  res.render('destination3', { title: 'Travel Blog - Berlin', destination: 'What to expect in Berlin' });
 });
 
 router.get('/destination4', function(req, res, next) {
-    res.render('destination4', { title: 'Destination 4', destination: 'Destination 4 Info' });
+  res.render('destination4', { title: 'Travel Blog - Rio de Janeiro', destination: 'Rio de Janeiro' });
 });
 
 module.exports = router;
-

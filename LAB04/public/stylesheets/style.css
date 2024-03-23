@@ -6,3 +6,22 @@ body {
 a {
   color: #00B7FF;
 }
+
+/* Apply flexbox layout to align menu items vertically */
+nav ul {
+  display: flex;
+  padding: 0;
+}
+
+/* Style for each menu item */
+nav ul li {
+  list-style-type: none; /* Remove default list-style */
+}
+
+/* Style for the anchor tag within menu items */
+nav ul li a {
+  text-decoration: none; /* Remove underline from links */
+  color: black; /* Change link color */
+  padding: 10px; /* Add padding to the menu items */
+}
+
