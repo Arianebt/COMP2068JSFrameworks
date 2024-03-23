@@ -1,6 +1,19 @@
+html {
+  max-width: 1055px;
+  padding-left: 192px;
+  padding-right: 189px;
+}
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: Arial, sans-serif;
+  color: blue; /* Text color in blue */
+  display: inline-grid;
+  align-content: space-evenly;
+  justify-content: space-evenly;
+  align-items: stretch;
+  justify-items: center;
 }
 
 a {
@@ -25,3 +38,10 @@ nav ul li a {
   padding: 10px; /* Add padding to the menu items */
 }
 
+h1 {
+  color: green; /* Heading color in green */
+}
+
+p {
+  color: black; /* Paragraph text color in black */
+}
